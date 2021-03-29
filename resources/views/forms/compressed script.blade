@@ -1,0 +1,9 @@
+$(function(){
+				var url = $("input").val();
+				$.get(
+				    url+'/getSub',
+				    function (data) {
+				        $(".wrapper").html(data);
+				    }
+				);
+			});
